@@ -2,6 +2,10 @@
 
 Welcome to my personal portfolio website! This project showcases a simple yet effective HTML and CSS design to present who I am, what I do, and how to reach me.
 
+## 🔗 Live Site
+
+Check out the live version here: [Mercy’s Portfolio](https://mercy-power-learn-portfolio.vercel.app/)
+
 ## 📁 Project Structure
 MercyPortfolio/
 ├── index.html # Main HTML file
