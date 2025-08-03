@@ -31,7 +31,7 @@ To run the project locally:
 🛠 Tech Stack
 - HTML5
 
- -CSS3
+-CSS3
 
  🙋🏽‍♀️ About Me
 
