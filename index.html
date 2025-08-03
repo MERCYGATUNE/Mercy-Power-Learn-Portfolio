@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    
-  </head>
-  <body>
-   
 
-   <nav class="navbar">
+    <title>Mercy Ariri | Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    
+   </head>
+   <body>
+   
+     <!-- NAVIGATION   -->
+
+    <nav class="navbar">
     <a href="#" class="logo">M.G</a>
 
-    <ul>
+     <ul class="nav-links" id="nav-links">
       <li class="active">
-        <a href="/home"> Home</a>
+        <a href="#home"> Home</a>
       </li>
       <li>
-        <a href="/about"> About</a>
+        <a href="#about"> About me</a>
       </li>
       <li>
-        <a href="/work"> Experience</a>
+        <a href="#education"> Education</a>
       </li>
       <li>
-        <a href="/work"> Service</a>
+        <a href="#projects"> Projects</a>
       </li>
       <li>
-        <a href="/contact"> Contact</a>
+        <a href="#tech"> Tech Stack</a>
       </li>
-    </ul>
-
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+     </ul>
+     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
+
      <div class="bars-animation">
       
        <div class="bar" style="--i:6;"></div>
@@ -41,19 +49,16 @@
        <div class="bar" style="--i:2;"></div>
        <div class="bar" style="--i:1;"></div>
 
-
-
      </div> 
 
 
-
-
-    <section class="home">
+    <section class="home" id="home">
 
     <div class="home-info">
       <h1>
       Mercy Ariri
       </h1>
+
       <h2>
       I'm a 
 
@@ -68,23 +73,21 @@
       <span style="--i:2;" data-text="Web3 Enthusiast">
         Web3 Enthusiast
       </span>
-
       </h2>
-
       <p>
-       <b>My Portfolio. It;s a brief tour into my pofessional journey!</b>
+        <strong>Welcome to my portfolio — a brief tour into my professional journey!</strong>
       </p>
 
       <div class="btn-sci">
-        <a href="#" class="btn">Download cv</a>
+        <a href="cv/MercyCV3.pdf" class="btn" download="MercyCV3.pdf">Download CV</a>
       </div>
 
       <div class="sci">
 
-        <a href="#"> <b> Github</b> </a>
-        <a href="# "> <b> LInkedin </b> </a>
-        <a href="#"> <b> twitter </b> </a>
-        <a href="#"> <b>Email </b> </a>
+        <a href="https://github.com/MERCYGATUNE"> <b> Github</b> </a>
+        <a href="https://www.linkedin.com/in/mercy-ariri-ba829b272/"> <b> LInkedin </b> </a>
+        <a href=" https://x.com/An_island_girl2       "> <b> twitter </b> </a>
+        <a href="mailto:ariri691@gmail.com"> <b>Email </b> </a>
       </div>
 
      </div>
@@ -98,8 +101,75 @@
 
     </div>
 
-   
    </section>
+
+
+    <!-- About Me -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Mercy Ariri — a Bio-Engineer turned Junior Developer. I'm passionate about solving real-world problems through code and exploring the world of Web3 and emerging technologies.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>B.Sc. in Bioengineering – Jomo Kenyatta University fo Agriculture and Technology</li>
+      <li>Full Stack Web Development – MORINGA SCHOOL</li>
+    </ul>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="section">
+    <h2>Tech Stack</h2>
+    <div class="stack-grid">
+      <span>HTML,</span>
+      <span>CSS,</span>
+      <span>JavaScript,</span>
+      <span>React</span>
+      
+      <span>Python,</span>
+      <span>Version control: Git/GitHub</span>
+      <span>SQL/MySQL</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-list">
+      <div class="project-item">
+        <h3>Portfolio Website</h3>
+        <p>Personal website showcasing my journey and projects.</p>
+        <a href="#" target="_blank">View Live</a>
+      </div>
+      <div class="project-item">
+        <h3>Web3 NFT Viewer</h3>
+        <p>Built a DApp to view and explore NFTs using Ethereum APIs.</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ariri691@gmail.com">youremail@example.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mercy Ariri. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
     
 </body>
